@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <h1>Tax Calculator</h1>
+
+    <label>Income Type:</label>
+    <select id="incomeType">
+        <option>Select Income Type</option>
+        <option value="salary">Salary</option>
+        <option value="freelance">Freelance</option>
+        <option value="business">Business</option>
+        <option value="investment">Investment</option>
+        <option value="rental">Rental</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label>Amount:</label>
+    <input id="amount" type="number" placeholder="Enter amount" />
+
+    <button id="calculateBtn">Calculate Tax</button>
+
+    <h2 id="result"></h2>
+
+    <script src="./script.js"></script>
+
+    
+</body>
+</html>

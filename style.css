@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+label, button {
+    display: block;
+    margin-top: 10px;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
