@@ -25,6 +25,12 @@ calculateBtn.addEventListener("click", function() {
     const tax = amount * taxRate;
     const netIncome = amount - tax;
 
+    if (tax > 500) {
+        resultEl.style.cssText = "color: red; font-weight: bold; font-size: 1.2em;";
+    } else {
+        resultEl.style.cssText = "color: green; font-weight: normal; font-size: 1.2em;";
+    }
+
     resultEl.textContent = `Tax Amount: $${tax.toFixed(2)}, Net Income: $${netIncome.toFixed(2)}`;
     
 })
