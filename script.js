@@ -4,6 +4,16 @@ const resultEl = document.getElementById("result");
 const calculateBtn = document.getElementById("calculateBtn");
 const resultText = resultEl.textContent;
 
+const countElement = document.getElementById("count");
+const incrementBtn = document.getElementById("increment");
+countElement.textContent = 0;
+
+incrementBtn.addEventListener("click", function() {
+    countElement.textContent = parseInt(countElement.textContent) + 1;
+});
+
+
+
 calculateBtn.addEventListener("click", function() {
     const incomeType = incomeTypeEl.value;
     const amount = parseFloat(amountEl.value);
