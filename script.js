@@ -2,6 +2,7 @@ const incomeTypeEl = document.getElementById("incomeType");
 const amountEl = document.getElementById("amount");
 const resultEl = document.getElementById("result");
 const calculateBtn = document.getElementById("calculateBtn");
+const resultText = resultEl.textContent;
 
 calculateBtn.addEventListener("click", function() {
     const incomeType = incomeTypeEl.value;
@@ -21,5 +22,9 @@ calculateBtn.addEventListener("click", function() {
         taxRate = 0.05; // 5% for other types
     }
 
-    alert(taxRate);
+    const tax = amount * taxRate;
+    const netIncome = amount - tax;
+
+    resultEl.textContent = `Tax Amount: $${tax.toFixed(2)}, Net Income: $${netIncome.toFixed(2)}`;
+    
 })
